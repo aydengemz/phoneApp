@@ -7,19 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6414E6A21A86ADE00DD3613 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E6921A86ADE00DD3613 /* Model.swift */; };
+		F6414E6C21A86B2A00DD3613 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E6B21A86B2A00DD3613 /* FavoriteCell.swift */; };
+		F6414E6E21A86B4200DD3613 /* FavoriteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E6D21A86B4200DD3613 /* FavoriteDataSource.swift */; };
+		F6414E7021A86E6A00DD3613 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E6F21A86E6A00DD3613 /* FavoriteViewController.swift */; };
+		F6414E7221A877F200DD3613 /* AllContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E7121A877F200DD3613 /* AllContactsViewController.swift */; };
+		F6414E7421A8787100DD3613 /* AllContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E7321A8787100DD3613 /* AllContactCell.swift */; };
+		F6414E7621A8796700DD3613 /* AllContactDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E7521A8796700DD3613 /* AllContactDataSource.swift */; };
+		F6414E7821A87C2200DD3613 /* AllData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E7721A87C2200DD3613 /* AllData.swift */; };
+		F6414E7A21A9C53300DD3613 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E7921A9C53300DD3613 /* AddContactViewController.swift */; };
+		F6414E8421A9D2EA00DD3613 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */; };
+		F6414E8621AA0BE300DD3613 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */; };
 		F6C4711221A1B37A00EAF828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4711121A1B37A00EAF828 /* AppDelegate.swift */; };
-		F6C4711421A1B37A00EAF828 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4711321A1B37A00EAF828 /* FirstViewController.swift */; };
-		F6C4711621A1B37A00EAF828 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4711521A1B37A00EAF828 /* SecondViewController.swift */; };
 		F6C4711921A1B37A00EAF828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C4711721A1B37A00EAF828 /* Main.storyboard */; };
 		F6C4711B21A1B37E00EAF828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C4711A21A1B37E00EAF828 /* Assets.xcassets */; };
 		F6C4711E21A1B37E00EAF828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C4711C21A1B37E00EAF828 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6414E6921A86ADE00DD3613 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F6414E6B21A86B2A00DD3613 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		F6414E6D21A86B4200DD3613 /* FavoriteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDataSource.swift; sourceTree = "<group>"; };
+		F6414E6F21A86E6A00DD3613 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		F6414E7121A877F200DD3613 /* AllContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContactsViewController.swift; sourceTree = "<group>"; };
+		F6414E7321A8787100DD3613 /* AllContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContactCell.swift; sourceTree = "<group>"; };
+		F6414E7521A8796700DD3613 /* AllContactDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContactDataSource.swift; sourceTree = "<group>"; };
+		F6414E7721A87C2200DD3613 /* AllData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllData.swift; sourceTree = "<group>"; };
+		F6414E7921A9C53300DD3613 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
+		F6414E8721AA0E6000DD3613 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F6C4710E21A1B37A00EAF828 /* phoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C4711121A1B37A00EAF828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6C4711321A1B37A00EAF828 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F6C4711521A1B37A00EAF828 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F6C4711821A1B37A00EAF828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6C4711A21A1B37E00EAF828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6C4711D21A1B37E00EAF828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,9 +56,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6414E7F21A9D28B00DD3613 /* AllContacts */ = {
+			isa = PBXGroup;
+			children = (
+				F6414E7321A8787100DD3613 /* AllContactCell.swift */,
+				F6414E7521A8796700DD3613 /* AllContactDataSource.swift */,
+				F6414E7121A877F200DD3613 /* AllContactsViewController.swift */,
+			);
+			path = AllContacts;
+			sourceTree = "<group>";
+		};
+		F6414E8021A9D29C00DD3613 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				F6414E6F21A86E6A00DD3613 /* FavoriteViewController.swift */,
+				F6414E6B21A86B2A00DD3613 /* FavoriteCell.swift */,
+				F6414E6D21A86B4200DD3613 /* FavoriteDataSource.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		F6C4710521A1B37A00EAF828 = {
 			isa = PBXGroup;
 			children = (
+				F6414E8721AA0E6000DD3613 /* MyPlayground.playground */,
 				F6C4711021A1B37A00EAF828 /* phoneApp */,
 				F6C4710F21A1B37A00EAF828 /* Products */,
 			);
@@ -56,13 +96,18 @@
 		F6C4711021A1B37A00EAF828 /* phoneApp */ = {
 			isa = PBXGroup;
 			children = (
-				F6C4711121A1B37A00EAF828 /* AppDelegate.swift */,
-				F6C4711321A1B37A00EAF828 /* FirstViewController.swift */,
-				F6C4711521A1B37A00EAF828 /* SecondViewController.swift */,
-				F6C4711721A1B37A00EAF828 /* Main.storyboard */,
-				F6C4711A21A1B37E00EAF828 /* Assets.xcassets */,
 				F6C4711C21A1B37E00EAF828 /* LaunchScreen.storyboard */,
+				F6C4711721A1B37A00EAF828 /* Main.storyboard */,
+				F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */,
+				F6414E7921A9C53300DD3613 /* AddContactViewController.swift */,
+				F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */,
+				F6414E7F21A9D28B00DD3613 /* AllContacts */,
+				F6414E8021A9D29C00DD3613 /* Favorites */,
+				F6C4711A21A1B37E00EAF828 /* Assets.xcassets */,
 				F6C4711F21A1B37E00EAF828 /* Info.plist */,
+				F6C4711121A1B37A00EAF828 /* AppDelegate.swift */,
+				F6414E6921A86ADE00DD3613 /* Model.swift */,
+				F6414E7721A87C2200DD3613 /* AllData.swift */,
 			);
 			path = phoneApp;
 			sourceTree = "<group>";
@@ -138,9 +183,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6C4711621A1B37A00EAF828 /* SecondViewController.swift in Sources */,
+				F6414E7821A87C2200DD3613 /* AllData.swift in Sources */,
+				F6414E7221A877F200DD3613 /* AllContactsViewController.swift in Sources */,
 				F6C4711221A1B37A00EAF828 /* AppDelegate.swift in Sources */,
-				F6C4711421A1B37A00EAF828 /* FirstViewController.swift in Sources */,
+				F6414E7621A8796700DD3613 /* AllContactDataSource.swift in Sources */,
+				F6414E7021A86E6A00DD3613 /* FavoriteViewController.swift in Sources */,
+				F6414E6C21A86B2A00DD3613 /* FavoriteCell.swift in Sources */,
+				F6414E8421A9D2EA00DD3613 /* ContactDetailViewController.swift in Sources */,
+				F6414E7421A8787100DD3613 /* AllContactCell.swift in Sources */,
+				F6414E7A21A9C53300DD3613 /* AddContactViewController.swift in Sources */,
+				F6414E6E21A86B4200DD3613 /* FavoriteDataSource.swift in Sources */,
+				F6414E6A21A86ADE00DD3613 /* Model.swift in Sources */,
+				F6414E8621AA0BE300DD3613 /* EditContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YA386LD63J;
 				INFOPLIST_FILE = phoneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YA386LD63J;
 				INFOPLIST_FILE = phoneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
