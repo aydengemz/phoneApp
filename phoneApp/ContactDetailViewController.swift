@@ -43,23 +43,25 @@ class ContactDetailViewController: UITableViewController {
         }
     }
  */
+ 
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier! {
         case "EditContactSegue":
             print("Prepare in ContactDetail")
            
             //if let editContactViewController = segue.destination as? EditContactViewController {
              if let navViewController = segue.destination as? UINavigationController {
-             print(contact)
+           //  print(contact)
                 //let contact = dataSource.contacts[selectedIndex]
                 let a = navViewController.topViewController as! EditContactViewController
                 a.contact = contact
                 //contactsViewController.stateController = stateController
             }
+            
         default:
             break
         }
-    }
+    } 
     
 }

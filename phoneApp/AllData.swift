@@ -56,6 +56,14 @@ public class AllData {
         }
         
     }
+    func removeContact(deletedContact: Contact) {
+        print("Item delete")
+        if let i = contacts.firstIndex(where: { $0.lastName == deletedContact.lastName }) {
+            print(i)
+            contacts.remove(at: i)
+        }
+        
+    }
    /* func removeContact(removedContact: Contact) {
         contacts.append(newContact)
     }

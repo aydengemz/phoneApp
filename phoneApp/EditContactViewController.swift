@@ -13,18 +13,28 @@ class EditContactViewController: UIViewController {
     @IBOutlet weak var editFirstNameField: UITextField!
     @IBOutlet weak var editLastNameField: UITextField!
     @IBOutlet weak var editPhoneNumberField: UITextField!
+    
     var contact: Contact!
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   
+    
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Prepare in editContact")
-        guard segue.identifier == "EditContactSegue" else {
-            return
-        }
+    switch segue.identifier{
+    case "EditContactSegue":
         let contact = Contact(firstName: editFirstNameField.text!, lastName: editLastNameField.text!, phone: editPhoneNumberField.text!)
-        print(contact)
+       // print(contact)
         AllData.shared.editContact(newContact: contact)
+    case "DeleteContactSegue":
         
+        let contact = Contact(firstName: editFirstNameField.text!, lastName: editLastNameField.text!, phone: editPhoneNumberField.text!)
+        
+        AllData.shared.removeContact(deletedContact: contact)
+    default:
+        break
     }
+    
+}
     
     override func viewDidLoad() {
         super.viewDidLoad()

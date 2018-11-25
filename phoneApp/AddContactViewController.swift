@@ -34,7 +34,7 @@ class AddContactViewController: UIViewController {
         super.viewDidLoad()
         
         if(contact != nil){
-            print(contact)
+           // print(contact)
         firstNameField.text = contact.firstName
         lastNameField.text = contact.lastName
         phoneNumberField.text = contact.phone

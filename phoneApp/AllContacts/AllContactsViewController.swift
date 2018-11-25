@@ -13,6 +13,7 @@ class AllContactsViewController: UIViewController {
     @IBAction func dismissContact(_ segue: UIStoryboardSegue) {}
     @IBAction func addContact(_ segue: UIStoryboardSegue) {}
     @IBAction func editContact(_ segue: UIStoryboardSegue) {}
+    @IBAction func deleteContact(_ segue: UIStoryboardSegue) {}
   
     
     fileprivate var dataSource: AllContactDataSource
