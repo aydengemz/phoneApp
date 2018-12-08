@@ -13,6 +13,8 @@ class EditContactViewController: UIViewController {
     @IBOutlet weak var editFirstNameField: UITextField!
     @IBOutlet weak var editLastNameField: UITextField!
     @IBOutlet weak var editPhoneNumberField: UITextField!
+    @IBOutlet weak var editEmailField: UITextField!
+    @IBOutlet weak var editNotesField: UITextField!
     
     var contact: Contact!
     
@@ -22,12 +24,12 @@ class EditContactViewController: UIViewController {
         print("Prepare in editContact")
     switch segue.identifier{
     case "EditContactSegue":
-        let contact = Contact(firstName: editFirstNameField.text!, lastName: editLastNameField.text!, phone: editPhoneNumberField.text!)
+        let contact = Contact(firstName: editFirstNameField.text!, lastName: editLastNameField.text!, phone: editPhoneNumberField.text!, favorite: false, email: editEmailField.text!, notes: editNotesField.text!)
        // print(contact)
         AllData.shared.editContact(newContact: contact)
     case "DeleteContactSegue":
         
-        let contact = Contact(firstName: editFirstNameField.text!, lastName: editLastNameField.text!, phone: editPhoneNumberField.text!)
+        let contact = Contact(firstName: editFirstNameField.text!, lastName: editLastNameField.text!, phone: editPhoneNumberField.text!, favorite: false, email: editEmailField.text!, notes: editNotesField.text!)
         
         AllData.shared.removeContact(deletedContact: contact)
     default:
@@ -44,6 +46,8 @@ class EditContactViewController: UIViewController {
             editFirstNameField.text = contact.firstName
             editLastNameField.text = contact.lastName
             editPhoneNumberField.text = contact.phone
+            editEmailField.text = contact.email
+            editNotesField.text = contact.notes
         }
     }
     

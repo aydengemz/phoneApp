@@ -13,6 +13,8 @@ class ContactDetailViewController: UITableViewController {
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var notesLabel: UILabel!
     
     var contact: Contact!
     
@@ -21,7 +23,8 @@ class ContactDetailViewController: UITableViewController {
         firstNameLabel.text = contact.firstName
         lastNameLabel.text = contact.lastName
         phoneLabel.text = contact.phone
-  
+        emailLabel.text = contact.email
+        notesLabel.text = contact.notes
     }
     
   /*

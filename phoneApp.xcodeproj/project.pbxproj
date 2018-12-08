@@ -18,6 +18,9 @@
 		F6414E7A21A9C53300DD3613 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E7921A9C53300DD3613 /* AddContactViewController.swift */; };
 		F6414E8421A9D2EA00DD3613 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */; };
 		F6414E8621AA0BE300DD3613 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */; };
+		F6AF977521BC644B007A7210 /* AllCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977421BC644B007A7210 /* AllCallsViewController.swift */; };
+		F6AF977721BC64D9007A7210 /* AllCallsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977621BC64D9007A7210 /* AllCallsDataSource.swift */; };
+		F6AF977C21BC6567007A7210 /* AllCallsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977B21BC6567007A7210 /* AllCallsCell.swift */; };
 		F6C4711221A1B37A00EAF828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4711121A1B37A00EAF828 /* AppDelegate.swift */; };
 		F6C4711921A1B37A00EAF828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C4711721A1B37A00EAF828 /* Main.storyboard */; };
 		F6C4711B21A1B37E00EAF828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C4711A21A1B37E00EAF828 /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 		F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 		F6414E8721AA0E6000DD3613 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F6AF977421BC644B007A7210 /* AllCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsViewController.swift; sourceTree = "<group>"; };
+		F6AF977621BC64D9007A7210 /* AllCallsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsDataSource.swift; sourceTree = "<group>"; };
+		F6AF977B21BC6567007A7210 /* AllCallsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsCell.swift; sourceTree = "<group>"; };
 		F6C4710E21A1B37A00EAF828 /* phoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C4711121A1B37A00EAF828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C4711821A1B37A00EAF828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		F6AF977A21BC6505007A7210 /* AllCall */ = {
+			isa = PBXGroup;
+			children = (
+				F6AF977421BC644B007A7210 /* AllCallsViewController.swift */,
+				F6AF977621BC64D9007A7210 /* AllCallsDataSource.swift */,
+				F6AF977B21BC6567007A7210 /* AllCallsCell.swift */,
+			);
+			path = AllCall;
+			sourceTree = "<group>";
+		};
 		F6C4710521A1B37A00EAF828 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +114,7 @@
 			children = (
 				F6C4711C21A1B37E00EAF828 /* LaunchScreen.storyboard */,
 				F6C4711721A1B37A00EAF828 /* Main.storyboard */,
+				F6AF977A21BC6505007A7210 /* AllCall */,
 				F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */,
 				F6414E7921A9C53300DD3613 /* AddContactViewController.swift */,
 				F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */,
@@ -183,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AF977721BC64D9007A7210 /* AllCallsDataSource.swift in Sources */,
+				F6AF977C21BC6567007A7210 /* AllCallsCell.swift in Sources */,
 				F6414E7821A87C2200DD3613 /* AllData.swift in Sources */,
 				F6414E7221A877F200DD3613 /* AllContactsViewController.swift in Sources */,
 				F6C4711221A1B37A00EAF828 /* AppDelegate.swift in Sources */,
@@ -191,6 +210,7 @@
 				F6414E6C21A86B2A00DD3613 /* FavoriteCell.swift in Sources */,
 				F6414E8421A9D2EA00DD3613 /* ContactDetailViewController.swift in Sources */,
 				F6414E7421A8787100DD3613 /* AllContactCell.swift in Sources */,
+				F6AF977521BC644B007A7210 /* AllCallsViewController.swift in Sources */,
 				F6414E7A21A9C53300DD3613 /* AddContactViewController.swift in Sources */,
 				F6414E6E21A86B4200DD3613 /* FavoriteDataSource.swift in Sources */,
 				F6414E6A21A86ADE00DD3613 /* Model.swift in Sources */,
