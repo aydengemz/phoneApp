@@ -65,6 +65,9 @@
 		F6414E7F21A9D28B00DD3613 /* AllContacts */ = {
 			isa = PBXGroup;
 			children = (
+				F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */,
+				F6414E7921A9C53300DD3613 /* AddContactViewController.swift */,
+				F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */,
 				F6414E7321A8787100DD3613 /* AllContactCell.swift */,
 				F6414E7521A8796700DD3613 /* AllContactDataSource.swift */,
 				F6414E7121A877F200DD3613 /* AllContactsViewController.swift */,
@@ -115,9 +118,6 @@
 				F6C4711C21A1B37E00EAF828 /* LaunchScreen.storyboard */,
 				F6C4711721A1B37A00EAF828 /* Main.storyboard */,
 				F6AF977A21BC6505007A7210 /* AllCall */,
-				F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */,
-				F6414E7921A9C53300DD3613 /* AddContactViewController.swift */,
-				F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */,
 				F6414E7F21A9D28B00DD3613 /* AllContacts */,
 				F6414E8021A9D29C00DD3613 /* Favorites */,
 				F6C4711A21A1B37E00EAF828 /* Assets.xcassets */,

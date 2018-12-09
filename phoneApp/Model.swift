@@ -56,12 +56,22 @@ struct Call {
     let from: String
     let when: Date
     let missed: Bool
+    let hasVM: Bool
+    let recordingName: String
     
     init(from: String, when: Date, missed: Bool){
         self.from = from
         self.when = when
         self.missed = missed
+        self.hasVM = false
+        self.recordingName = ""
     }
-    
+    init(from: String, when: Date, missed: Bool, hasVM: Bool, recordingName: String){
+        self.from = from
+        self.when = when
+        self.missed = missed
+        self.hasVM = hasVM
+        self.recordingName = recordingName
+    }
 }
 

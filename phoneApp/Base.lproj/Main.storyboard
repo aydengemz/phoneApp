@@ -600,6 +600,7 @@
                                         <connections>
                                             <outlet property="fromLabel" destination="ukj-fd-pHf" id="gcQ-kZ-ZDd"/>
                                             <outlet property="whenLabel" destination="2sp-OK-jOT" id="Fd8-8Z-k20"/>
+                                            <segue destination="8qW-ze-A48" kind="show" identifier="DisplayCallDetailSegue" id="22s-uH-AVD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -896,4 +897,7 @@
         <image name="icons8-voicemail-26" width="19.5" height="19.5"/>
         <image name="screen-shot-2013-07-29-at-10-31-20-am-1" width="333" height="484"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="22s-uH-AVD"/>
+    </inferredMetricsTieBreakers>
 </document>

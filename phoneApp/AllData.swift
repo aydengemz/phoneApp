@@ -31,8 +31,8 @@ public class AllData {
         //let someDateTime = formatter.date(from: "2016/10/08 22:31")
         
         calls = [
-            Call(from: "Me", when: formatter.date(from: "2017/12/13 12:14")!, missed: false),
-            Call(from: "You", when: formatter.date(from: "2018/11/19 22:22")!, missed: true),
+            Call(from: "Albert", when: formatter.date(from: "2017/12/13 12:14")!, missed: false),
+            Call(from: "Aert", when: formatter.date(from: "2018/11/19 22:22")!, missed: true),
             Call(from: "Bob", when: formatter.date(from: "2004/3/18 1:10")!, missed: false)
         ]
         //print(contacts)
