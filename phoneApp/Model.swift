@@ -53,7 +53,7 @@ struct Contact {
 }
 
 struct Call {
-    let from: String
+    var from: String
     let when: Date
     let missed: Bool
     let hasVM: Bool

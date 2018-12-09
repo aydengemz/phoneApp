@@ -15,6 +15,8 @@ public class AllData {
     var contacts: [Contact]
     var favorites: [Contact]
     var calls: [Call]
+    var hasVM: [Call]
+    
 
     private init() {
         contacts = [
@@ -31,10 +33,17 @@ public class AllData {
         //let someDateTime = formatter.date(from: "2016/10/08 22:31")
         
         calls = [
+            
             Call(from: "Albert", when: formatter.date(from: "2017/12/13 12:14")!, missed: false),
             Call(from: "Aert", when: formatter.date(from: "2018/11/19 22:22")!, missed: true),
-            Call(from: "Bob", when: formatter.date(from: "2004/3/18 1:10")!, missed: false)
+            Call(from: "Bob", when: formatter.date(from: "2004/3/18 1:10")!, missed: false, hasVM: true, recordingName: "Bob"),
+            Call(from: "Albertoe", when: formatter.date(from: "2011/8/1 14:56")!, missed: false, hasVM: true, recordingName: "Albertoe"),
         ]
+        
+        hasVM = calls.filter({ (aCall) -> Bool in
+            aCall.hasVM == true
+        })
+        
         //print(contacts)
         
         favorites = contacts.filter({ (aContact) -> Bool in
@@ -42,7 +51,7 @@ public class AllData {
         })
         
         //print(favorites)
-        
+       
     }
     
     func getContacts() -> [Contact] {
@@ -78,6 +87,10 @@ public class AllData {
     func getCalls() -> [Call] {
         return calls
     }
+    func getVoicemails() -> [Call] {
+        return hasVM
+    }
+    
    /* func removeContact(removedContact: Contact) {
         contacts.append(newContact)
     }
