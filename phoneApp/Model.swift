@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Contact {
+struct Contact: Codable {
     let firstName: String
     let lastName: String
     let phone: String
@@ -52,7 +52,7 @@ struct Contact {
     
 }
 
-struct Call {
+struct Call: Codable {
     var from: String
     let when: Date
     let missed: Bool

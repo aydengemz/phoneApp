@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>from</key>
+		<string>Albertoe</string>
+		<key>when</key>
+		<date>2011-11-09T15:09:36Z</date>
+		<key>missed</key>
+		<true/>
+		<key>hasVM</key>
+		<true/>
+		<key>recordingName</key>
+		<string>Albertoe</string>
+	</dict>
+	<dict>
+		<key>from</key>
+		<string>Bob</string>
+		<key>when</key>
+		<date>2018-12-12T02:19:56Z</date>
+		<key>missed</key>
+		<false/>
+		<key>hasVM</key>
+		<true/>
+		<key>recordingName</key>
+		<string>Bob</string>
+	</dict>
+</array>
+</plist>

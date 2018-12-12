@@ -18,6 +18,8 @@
 		F6414E7A21A9C53300DD3613 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E7921A9C53300DD3613 /* AddContactViewController.swift */; };
 		F6414E8421A9D2EA00DD3613 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */; };
 		F6414E8621AA0BE300DD3613 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */; };
+		F656FEC921C00CCF00965C6D /* Contact.plist in Resources */ = {isa = PBXBuildFile; fileRef = F656FEC821C00CCF00965C6D /* Contact.plist */; };
+		F656FECB21C0A6A500965C6D /* Call.plist in Resources */ = {isa = PBXBuildFile; fileRef = F656FECA21C0A6A400965C6D /* Call.plist */; };
 		F6AF977521BC644B007A7210 /* AllCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977421BC644B007A7210 /* AllCallsViewController.swift */; };
 		F6AF977721BC64D9007A7210 /* AllCallsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977621BC64D9007A7210 /* AllCallsDataSource.swift */; };
 		F6AF977C21BC6567007A7210 /* AllCallsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977B21BC6567007A7210 /* AllCallsCell.swift */; };
@@ -46,6 +48,8 @@
 		F6414E8321A9D2EA00DD3613 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 		F6414E8721AA0E6000DD3613 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F656FEC821C00CCF00965C6D /* Contact.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Contact.plist; sourceTree = "<group>"; };
+		F656FECA21C0A6A400965C6D /* Call.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Call.plist; sourceTree = "<group>"; };
 		F6AF977421BC644B007A7210 /* AllCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsViewController.swift; sourceTree = "<group>"; };
 		F6AF977621BC64D9007A7210 /* AllCallsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsDataSource.swift; sourceTree = "<group>"; };
 		F6AF977B21BC6567007A7210 /* AllCallsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsCell.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				F6C4711F21A1B37E00EAF828 /* Info.plist */,
 				F6C4711121A1B37A00EAF828 /* AppDelegate.swift */,
 				F6414E6921A86ADE00DD3613 /* Model.swift */,
+				F656FEC821C00CCF00965C6D /* Contact.plist */,
+				F656FECA21C0A6A400965C6D /* Call.plist */,
 				F6414E7721A87C2200DD3613 /* AllData.swift */,
 			);
 			path = phoneApp;
@@ -224,7 +230,9 @@
 				F6AF978C21BDE1F9007A7210 /* Albertoe.mp3 in Resources */,
 				F6C4711E21A1B37E00EAF828 /* LaunchScreen.storyboard in Resources */,
 				F6AF978D21BDE1F9007A7210 /* Bob.mp3 in Resources */,
+				F656FEC921C00CCF00965C6D /* Contact.plist in Resources */,
 				F6C4711B21A1B37E00EAF828 /* Assets.xcassets in Resources */,
+				F656FECB21C0A6A500965C6D /* Call.plist in Resources */,
 				F6C4711921A1B37A00EAF828 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
