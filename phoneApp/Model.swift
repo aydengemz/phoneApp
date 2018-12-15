@@ -12,7 +12,7 @@ struct Contact: Codable {
     let firstName: String
     let lastName: String
     let phone: String
-    let favorite: Bool
+    var favorite: Bool
     var email: String
     var notes: String
     

@@ -36,7 +36,16 @@ class AllContactsViewController: UIViewController {
             break
         }
     }
-    
+    /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Prepare in addFavorite")
+        guard segue.identifier == "addFavoriteSegue" else {
+            return
+        }
+        let contact =
+        AllData.shared.addFavorite(newFavorite: contact)
+        
+    }
+    */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         dataSource = AllContactDataSource(contacts: AllData.shared.getContacts())

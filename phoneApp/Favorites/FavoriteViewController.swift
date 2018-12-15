@@ -17,6 +17,20 @@ class FavoritesViewController: UIViewController {
         self.dataSource = ContactDataSource(contacts: AllData.shared.getFavotires())
         super.init(coder: aDecoder)
     }
+    @IBAction func unFavorite(_ sender: Any) {
+       let selected = tableView.indexPathForSelectedRow?.row
+        let contact = dataSource.contacts[selected ?? 0]
+        AllData.shared.unFavorite(unFavorite: contact)
+        
+        let alert = UIAlertController(title: "Unfavorited", message: "You have unfavorited \(contact.firstName)", preferredStyle: UIAlertController.Style.alert)
+        
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 // MARK: UIViewController

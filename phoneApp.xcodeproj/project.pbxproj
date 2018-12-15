@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FD1EC7B61BE011A16B5A0DF /* Pods_phoneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65535DF5B5DBEEF6D1ADC3E /* Pods_phoneApp.framework */; };
 		F6414E6A21A86ADE00DD3613 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E6921A86ADE00DD3613 /* Model.swift */; };
 		F6414E6C21A86B2A00DD3613 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E6B21A86B2A00DD3613 /* FavoriteCell.swift */; };
 		F6414E6E21A86B4200DD3613 /* FavoriteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E6D21A86B4200DD3613 /* FavoriteDataSource.swift */; };
@@ -20,6 +21,7 @@
 		F6414E8621AA0BE300DD3613 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6414E8521AA0BE300DD3613 /* EditContactViewController.swift */; };
 		F656FEC921C00CCF00965C6D /* Contact.plist in Resources */ = {isa = PBXBuildFile; fileRef = F656FEC821C00CCF00965C6D /* Contact.plist */; };
 		F656FECB21C0A6A500965C6D /* Call.plist in Resources */ = {isa = PBXBuildFile; fileRef = F656FECA21C0A6A400965C6D /* Call.plist */; };
+		F656FECD21C1639500965C6D /* icons8-broken-heart-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F656FECC21C1639500965C6D /* icons8-broken-heart-50.png */; };
 		F6AF977521BC644B007A7210 /* AllCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977421BC644B007A7210 /* AllCallsViewController.swift */; };
 		F6AF977721BC64D9007A7210 /* AllCallsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977621BC64D9007A7210 /* AllCallsDataSource.swift */; };
 		F6AF977C21BC6567007A7210 /* AllCallsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF977B21BC6567007A7210 /* AllCallsCell.swift */; };
@@ -36,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		486903AC9D6C50E3B2EE2215 /* Pods-phoneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-phoneApp/Pods-phoneApp.debug.xcconfig"; sourceTree = "<group>"; };
+		61482DA4A4B1ECDE068DA73B /* Pods-phoneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-phoneApp/Pods-phoneApp.release.xcconfig"; sourceTree = "<group>"; };
+		C65535DF5B5DBEEF6D1ADC3E /* Pods_phoneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6414E6921A86ADE00DD3613 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F6414E6B21A86B2A00DD3613 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		F6414E6D21A86B4200DD3613 /* FavoriteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDataSource.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		F6414E8721AA0E6000DD3613 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F656FEC821C00CCF00965C6D /* Contact.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Contact.plist; sourceTree = "<group>"; };
 		F656FECA21C0A6A400965C6D /* Call.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Call.plist; sourceTree = "<group>"; };
+		F656FECC21C1639500965C6D /* icons8-broken-heart-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-broken-heart-50.png"; sourceTree = "<group>"; };
 		F6AF977421BC644B007A7210 /* AllCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsViewController.swift; sourceTree = "<group>"; };
 		F6AF977621BC64D9007A7210 /* AllCallsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsDataSource.swift; sourceTree = "<group>"; };
 		F6AF977B21BC6567007A7210 /* AllCallsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCallsCell.swift; sourceTree = "<group>"; };
@@ -72,12 +78,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD1EC7B61BE011A16B5A0DF /* Pods_phoneApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6402C0A4100AB5C7A925C9C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C65535DF5B5DBEEF6D1ADC3E /* Pods_phoneApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BABE2E68C7CC993227097C02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				486903AC9D6C50E3B2EE2215 /* Pods-phoneApp.debug.xcconfig */,
+				61482DA4A4B1ECDE068DA73B /* Pods-phoneApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F6414E7F21A9D28B00DD3613 /* AllContacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +161,8 @@
 				F6414E8721AA0E6000DD3613 /* MyPlayground.playground */,
 				F6C4711021A1B37A00EAF828 /* phoneApp */,
 				F6C4710F21A1B37A00EAF828 /* Products */,
+				BABE2E68C7CC993227097C02 /* Pods */,
+				6402C0A4100AB5C7A925C9C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +185,7 @@
 				F6414E7F21A9D28B00DD3613 /* AllContacts */,
 				F6414E8021A9D29C00DD3613 /* Favorites */,
 				F6C4711A21A1B37E00EAF828 /* Assets.xcassets */,
+				F656FECC21C1639500965C6D /* icons8-broken-heart-50.png */,
 				F6C4711F21A1B37E00EAF828 /* Info.plist */,
 				F6C4711121A1B37A00EAF828 /* AppDelegate.swift */,
 				F6414E6921A86ADE00DD3613 /* Model.swift */,
@@ -176,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6C4712221A1B37E00EAF828 /* Build configuration list for PBXNativeTarget "phoneApp" */;
 			buildPhases = (
+				84DDDB976DEE149060E17642 /* [CP] Check Pods Manifest.lock */,
 				F6C4710A21A1B37A00EAF828 /* Sources */,
 				F6C4710B21A1B37A00EAF828 /* Frameworks */,
 				F6C4710C21A1B37A00EAF828 /* Resources */,
+				E1A06391501674DE5A8D35D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +230,11 @@
 				TargetAttributes = {
 					F6C4710D21A1B37A00EAF828 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -229,6 +263,7 @@
 			files = (
 				F6AF978C21BDE1F9007A7210 /* Albertoe.mp3 in Resources */,
 				F6C4711E21A1B37E00EAF828 /* LaunchScreen.storyboard in Resources */,
+				F656FECD21C1639500965C6D /* icons8-broken-heart-50.png in Resources */,
 				F6AF978D21BDE1F9007A7210 /* Bob.mp3 in Resources */,
 				F656FEC921C00CCF00965C6D /* Contact.plist in Resources */,
 				F6C4711B21A1B37E00EAF828 /* Assets.xcassets in Resources */,
@@ -238,6 +273,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84DDDB976DEE149060E17642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-phoneApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A06391501674DE5A8D35D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-phoneApp/Pods-phoneApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-phoneApp/Pods-phoneApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6C4710A21A1B37A00EAF828 /* Sources */ = {
@@ -406,6 +488,7 @@
 		};
 		F6C4712321A1B37E00EAF828 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 486903AC9D6C50E3B2EE2215 /* Pods-phoneApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -425,6 +508,7 @@
 		};
 		F6C4712421A1B37E00EAF828 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61482DA4A4B1ECDE068DA73B /* Pods-phoneApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -27,6 +27,20 @@ class ContactDetailViewController: UITableViewController {
         notesLabel.text = contact.notes
     }
     
+    
+    @IBAction func addFavorite(_ sender: Any) {
+        let contact = Contact(firstName: firstNameLabel.text!, lastName: lastNameLabel.text!, phone: phoneLabel.text!, favorite: false, email: emailLabel.text!, notes: notesLabel.text!)
+        AllData.shared.addFavorite(newFavorite: contact)
+        
+        let alert = UIAlertController(title: "Favorited!", message: "You have favorited \(contact.firstName)!", preferredStyle: UIAlertController.Style.alert)
+        
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
   /*
  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        

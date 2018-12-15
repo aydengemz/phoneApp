@@ -20,10 +20,14 @@ public class AllData {
     var contacts: [Contact] = []
     var favorites: [Contact] = []
     var calls: [Call] = []
+    var sortedCalls: [Call] = []
     var hasVM: [Call] = []
-    //let contactsURL1 = Bundle.main.url(forResource: "Contact", withExtension: "plist")
-    let contactsURL = FileManager.documentDirectoryUrl.appendingPathComponent("Contact").appendingPathExtension("plist")
+    var dateSortedCall: [Date] = []
+    
+    let contactsURL1 = Bundle.main.url(forResource: "Contact", withExtension: "plist")
     let callsURL1 = Bundle.main.url(forResource: "Call", withExtension: "plist")
+    
+    let contactsURL = FileManager.documentDirectoryUrl.appendingPathComponent("Contact").appendingPathExtension("plist")
     let callsURL = FileManager.documentDirectoryUrl.appendingPathComponent("Call").appendingPathExtension("plist")
 
 
@@ -31,19 +35,22 @@ public class AllData {
         
         //let contactsURL = Bundle.main.url(forResource: "Contact", withExtension: "plist")
         //var contacts: [Contact]?
-        
+        print(contactsURL)
         if let data = try? Data(contentsOf: contactsURL) {
             print(data)
             let decoder = PropertyListDecoder()
             contacts = try! decoder.decode([Contact].self, from: data)
             print(contacts)
+            
+            saveToContactPlist(contacts: contacts)
         }
         if let data2 = try? Data(contentsOf: callsURL1!) {
             print(data2)
             let decoder = PropertyListDecoder()
             calls = try! decoder.decode([Call].self, from: data2)
             print(calls)
-            //saveToCallPlist(calls: calls)
+            
+            saveToCallPlist(calls: calls)
         }
         
         
@@ -58,6 +65,11 @@ public class AllData {
         */
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        
+      sortedCalls = calls.sorted(by: { $0.when.compare($1.when) == .orderedAscending })
+        print(sortedCalls)
+        
+        
         //let someDateTime = formatter.date(from: "2016/10/08 22:31")
         
       /*  calls = [
@@ -134,8 +146,8 @@ public class AllData {
             contacts.append(newContact)
             saveToContactPlist(contacts: contacts)
         }
-        
     }
+    
     func removeContact(deletedContact: Contact) {
         print("Item delete")
         if let i = contacts.firstIndex(where: { $0.lastName == deletedContact.lastName }) {
@@ -143,10 +155,29 @@ public class AllData {
             contacts.remove(at: i)
             saveToContactPlist(contacts: contacts)
         }
-        
     }
+    
+    func addFavorite(newFavorite: Contact) {
+        print("Item Favorite")
+        if let i = contacts.firstIndex(where: { $0.lastName == newFavorite.lastName }) {
+            print(i)
+            contacts[i].favorite = true
+            print(contacts)
+            saveToContactPlist(contacts: contacts)
+        }
+    }
+    func unFavorite(unFavorite: Contact) {
+        print("Item unFavorite")
+        if let i = contacts.firstIndex(where: { $0.lastName == unFavorite.lastName }) {
+            print(i)
+            contacts[i].favorite = false
+            print(contacts)
+            saveToContactPlist(contacts: contacts)
+        }
+    }
+    
     func getCalls() -> [Call] {
-        return calls
+        return sortedCalls
     }
     func getVoicemails() -> [Call] {
         return hasVM
